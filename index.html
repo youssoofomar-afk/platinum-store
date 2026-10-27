@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLATINUM | بلاتينيوم للأدوات الصحية</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f4fbff;
+    color: #203746;
+}
+
+header {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #b9e8fa;
+}
+
+header h1 {
+    margin: 0;
+    color: #1688b5;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #526d7b;
+}
+
+nav {
+    background: #dff5ff;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #176b91;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 20px;
+    color: white;
+    background:
+      linear-gradient(rgba(8, 55, 75, .55),
+                      rgba(8, 55, 75, .55)),
+      url("https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1600&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 34px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+button {
+    background: #1799c9;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #087ba8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 16px;
+}
+
+h2.section-title {
+    text-align: center;
+    color: #1688b5;
+    margin-bottom: 25px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.category {
+    background: white;
+    border: 1px solid #cceefa;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tools {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #b9ddea;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #d5edf7;
+    box-shadow: 0 4px 12px rgba(30, 100, 130, .08);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    background: #e7f5fa;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    color: #167da5;
+    margin-top: 0;
+}
+
+.price {
+    color: #147d9f;
+    font-weight: bold;
+}
+
+.cart {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    border: 1px solid #cceefa;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3f2f8;
+}
+
+.contact {
+    text-align: center;
+    background: #dff5ff;
+    padding: 30px 15px;
+    margin-top: 30px;
+}
+
+.contact a {
+    color: #087ba8;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #ffffff;
+    padding: 18px;
+    color: #607d8b;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PLATINUM</h1>
+    <p>بلاتينيوم للأدوات الصحية — الجودة تبدأ من هنا</p>
+</header>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#categories">الأقسام</a>
+    <a href="#products">المنتجات</a>
+    <a href="#cart">سلة المشتريات</a>
+    <a href="#contact">تواصل معنا</a>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h2>كل احتياجات حمامك في مكان واحد</h2>
+        <p>خلاطات، دش، بانيوهات، أحواض، مواسير ومستلزمات تركيب</p>
+        <a href="#products">
+            <button>تصفح المنتجات</button>
+        </a>
+    </div>
+</section>
+
+<section class="container" id="categories">
+    <h2 class="section-title">أقسام المحل</h2>
+
+    <div class="categories">
+        <div class="category">🚰 الخلاطات والحنفيات</div>
+        <div class="category">🚿 الدش والشاور</div>
+        <div class="category">🛁 البانيوهات</div>
+        <div class="category">🚽 الأطقم الصحية</div>
+        <div class="category">🔧 المواسير والوصلات</div>
+        <div class="category">♨️ السخانات والفلاتر</div>
+    </div>
+</section>
+
+<section class="container" id="products">
+    <h2 class="section-title">منتجاتنا</h2>
+
+    <div class="tools">
+        <input id="search" type="text"
+               placeholder="ابحث عن منتج..."
+               oninput="renderProducts()">
+
+        <select id="category" onchange="renderProducts()">
+            <option value="all">كل الأقسام</option>
+            <option value="خلاطات">خلاطات وحنفيات</option>
+            <option value="دش">دش وشاور</option>
+            <option value="بانيو">بانيوهات</option>
+            <option value="أحواض">أحواض</option>
+            <option value="مواسير">مواسير ووصلات</option>
+            <option value="صحي">أطقم صحية</option>
+        </select>
+    </div>
+
+    <div class="products" id="productList"></div>
+
+    <div class="cart" id="cart">
+        <h2>🛒 سلة المشتريات (<span id="count">0</span>)</h2>
+        <div id="cartItems">السلة فارغة حاليًا.</div>
+        <br>
+        <button onclick="clearCart()">إفراغ السلة</button>
+        <button onclick="sendOrder()">إرسال الطلب على واتساب</button>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>تواصل مع بلاتينيوم</h2>
+    <p>للاستفسار عن الأسعار وتوافر المنتجات</p>
+    <p>رقم التواصل: 01050778002</p>
+    <a href="https://wa.me/201050778002" target="_blank">
+        <button>تواصل معنا على واتساب</button>
+    </a>
+</section>
+
+<footer>
+    PLATINUM © 2026 — بلاتينيوم للأدوات الصحية
+</footer>
+
+<script>
+const products = [
+    {
+        name: "خلاط حوض مودرن",
+        category: "خلاطات",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "حنفية كروم",
+        category: "خلاطات",
+        image: "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "خلاط بانيو",
+        category: "خلاطات",
+        image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "دش حمام مودرن",
+        category: "دش",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "بانيو أبيض",
+        category: "بانيو",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "حوض حمام",
+        category: "أحواض",
+        image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "حوض مودرن",
+        category: "أحواض",
+        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "طقم صحي",
+        category: "صحي",
+        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "مواسير ووصلات",
+        category: "مواسير",
+        image: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "خلاط مطبخ",
+        category: "خلاطات",
+        image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "دش يدوي",
+        category: "دش",
+        image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        name: "بانيو مودرن",
+        category: "بانيو",
+        image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=700&q=80"
+    }
+];
+
+let cart = [];
+
+function renderProducts() {
+    const list = document.getElementById("productList");
+    const query = document.getElementById("search").value.trim().toLowerCase();
+    const category = document.getElementById("category").value;
+
+    list.innerHTML = "";
+
+    const filtered = products.filter(function(product) {
+        const matchesName = product.name.toLowerCase().includes(query);
+        const matchesCategory =
+            category === "all" || product.category === category;
+
+        return matchesName && matchesCategory;
+    });
+
+    filtered.forEach(function(product) {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const img = document.createElement("img");
+        img.src = product.image;
+        img.alt = product.name;
+        img.loading = "lazy";
+        img.onerror = function() {
+            this.style.display = "none";
+        };
+
+        const content = document.createElement("div");
+        content.className = "card-content";
+
+        const title = document.createElement("h3");
+        title.textContent = product.name;
+
+        const price = document.createElement("p");
+        price.className = "price";
+        price.textContent = "السعر عند الطلب";
+
+        const button = document.createElement("button");
+        button.textContent = "أضف إلى السلة";
+        button.onclick = function() {
+            cart.push(product);
+            renderCart();
+        };
+
+        content.appendChild(title);
+        content.appendChild(price);
+        content.appendChild(button);
+
+        card.appendChild(img);
+        card.appendChild(content);
+        list.appendChild(card);
+    });
+
+    if (filtered.length === 0) {
+        list.textContent = "مفيش منتجات مطابقة للبحث.";
+    }
+}
+
+function renderCart() {
+    const items = document.getElementById("cartItems");
+    document.getElementById("count").textContent = cart.length;
+
+    items.innerHTML = "";
+
+    if (cart.length === 0) {
+        items.textContent = "السلة فارغة حاليًا.";
+        return;
+    }
+
+    cart.forEach(function(product, index) {
+        const row = document.createElement("div");
+        row.className = "cart-item";
+
+        const name = document.createElement("span");
+        name.textContent = product.name;
+
+        const remove = document.createElement("button");
+        remove.textContent = "حذف";
+        remove.onclick = function() {
+            cart.splice(index, 1);
+            renderCart();
+        };
+
+        row.appendChild(name);
+        row.appendChild(remove);
+        items.appendChild(row);
+    });
+}
+
+function clearCart() {
+    cart = [];
+    renderCart();
+}
+
+function sendOrder() {
+    if (cart.length === 0) {
+        alert("ضيف منتجات للسلة الأول.");
+        return;
+    }
+
+    let message = "السلام عليكم، عايز أطلب المنتجات دي من بلاتينيوم:%0A";
+
+    cart.forEach(function(product, index) {
+        message += (index + 1) + "- " + encodeURIComponent(product.name) + "%0A";
+    });
+
+    message += "%0Aمن فضلكم ابعتولي الأسعار والتفاصيل.";
+
+    window.open("https://wa.me/201050778002?text=" + message, "_blank");
+}
+
+renderProducts();
+renderCart();
+</script>
+
+</body>
+</html>
